@@ -48,6 +48,25 @@ These measurements help show how spectrum activity changes over time, how emissi
 
 The goal of this site is to document observed spectral activity, compare activity across distributed nodes, and connect observed emissions to known event-time wireless systems when possible.
 
+## Deployment
+
+For this measurement campaign, four RadioHound nodes were deployed around the Notre Dame Stadium environment. The nodes were placed near the northeast, northwest, southeast, and southwest sides of the stadium to provide spatially distributed observations of RF activity.
+
+The colors in the map match the node colors used throughout the analysis figures: blue for Stadium NE, green for Stadium NW, red for Stadium SE, and orange for Stadium SW.
+
+```{=html}
+<figure style="text-align: center;">
+  <img src="content/stadium_nodes_aerial.png" alt="RadioHound node deployment around Notre Dame Stadium" style="width: 85%;">
+  <figcaption>RadioHound node locations around Notre Dame Stadium.</figcaption>
+</figure>
+
+In addition to the node-location map, the photo below shows an example of the physical deployment setup. The RadioHound node was installed near existing stadium network infrastructure, with external antennas mounted above the enclosure. This type of deployment provides a practical way to place spectrum sensors around the stadium while using nearby infrastructure for mounting, protection, power, and network connectivity.
+
+<figure style="text-align: center;">
+  <img src="content/rh_deployment_closeup.JPG" alt="RadioHound node deployment close-up" style="width: 80%;">
+  <figcaption>Close-up view of a deployed RadioHound node installed near stadium network infrastructure, with external antennas mounted above the enclosure.</figcaption>
+</figure>
+
 ## Pages
 
 - [1920 to 1930 MHz](1920_1930_mhz.qmd): Candidate Riedel Bolero or DECT-like intercom activity.
