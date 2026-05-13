@@ -1,0 +1,12 @@
+---
+title: "Temporal PSD Evolution"
+---
+
+## Overview
+
+This page will present time-evolving PSD views across multiple receiver nodes.
+
+## Notes
+
+- PSD snapshots will be compared across nodes.
+- Future figures may include animated GIFs or time-indexed image galleries.

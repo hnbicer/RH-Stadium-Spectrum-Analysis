@@ -1,0 +1,12 @@
+website:
+  title: "RH Stadium Spectrum Analysis"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Overview
+      - href: 1920_1930_mhz.qmd
+        text: 1920–1930 MHz
+      - href: 5p8ghz_links.qmd
+        text: 5.8 GHz Links
+      - href: longitudinal_psd.qmd
+        text: Temporal PSD

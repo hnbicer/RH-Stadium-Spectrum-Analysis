@@ -1,0 +1,12 @@
+---
+title: "5.8 GHz Links"
+---
+
+## Overview
+
+This page will summarize observed activity around the 5.8 GHz band.
+
+## Notes
+
+- Candidate systems include event-time wireless video links.
+- Analysis will include PSDs, spectrograms, and temporal behavior.

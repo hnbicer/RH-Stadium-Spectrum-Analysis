@@ -1,0 +1,91 @@
+# ============================================================
+# OS / editor junk
+# ============================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*.tmp
+*.bak
+.vscode/
+.idea/
+
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+conda-env/
+
+# Python packaging/build artifacts
+build/
+dist/
+*.egg-info/
+
+# ============================================================
+# Quarto
+# ============================================================
+.quarto/
+_freeze/
+_site/
+
+# If you publish GitHub Pages from docs/, DO NOT ignore docs/
+# docs/
+
+# ============================================================
+# Large raw data files
+# ============================================================
+data/
+raw_data/
+processed_data/
+*.h5
+*.hdf5
+*.iq
+*.bin
+*.dat
+*.npy
+*.npz
+*.mat
+*.jsonl
+*.csv
+
+# ============================================================
+# Generated figures / animations
+# Comment these out if you want figures tracked on GitHub Pages
+# ============================================================
+figures/generated/
+outputs/
+results/
+plots/
+*.gif
+
+# ============================================================
+# Logs
+# ============================================================
+logs/
+*.log
+*.out
+*.err
+
+# ============================================================
+# Secrets / local config
+# ============================================================
+.env
+.env.*
+secrets.*
+credentials.*
+token.*
+/.quarto/
+**/*.quarto_ipynb

@@ -1,0 +1,15 @@
+---
+title: "RH Stadium Spectrum Analysis"
+---
+
+## Overview
+
+This site summarizes longitudinal RF spectrum measurements collected around the stadium environment.
+
+The goal is to document observed spectral activity, compare activity across distributed nodes, and relate emissions to known event-time wireless systems when possible.
+
+## Pages
+
+- **1920–1930 MHz:** Candidate Riedel Bolero / DECT-like intercom activity.
+- **5.8 GHz Links:** Candidate video or WaveCentral-style links near the football event window.
+- **Temporal PSD:** Time-evolving PSD views across nodes.
