@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "longitudinal_psd.html",
+    "href": "longitudinal_psd.html",
+    "title": "Temporal PSD Evolution",
+    "section": "",
+    "text": "This page will present time-evolving PSD views across multiple receiver nodes."
+  },
+  {
+    "objectID": "longitudinal_psd.html#overview",
+    "href": "longitudinal_psd.html#overview",
+    "title": "Temporal PSD Evolution",
+    "section": "",
+    "text": "This page will present time-evolving PSD views across multiple receiver nodes."
+  },
+  {
+    "objectID": "longitudinal_psd.html#notes",
+    "href": "longitudinal_psd.html#notes",
+    "title": "Temporal PSD Evolution",
+    "section": "Notes",
+    "text": "Notes\n\nPSD snapshots will be compared across nodes.\nFuture figures may include animated GIFs or time-indexed image galleries."
+  },
+  {
+    "objectID": "5p8ghz_links.html",
+    "href": "5p8ghz_links.html",
+    "title": "5.8 GHz Links",
+    "section": "",
+    "text": "This page will summarize observed activity around the 5.8 GHz band."
+  },
+  {
+    "objectID": "5p8ghz_links.html#overview",
+    "href": "5p8ghz_links.html#overview",
+    "title": "5.8 GHz Links",
+    "section": "",
+    "text": "This page will summarize observed activity around the 5.8 GHz band."
+  },
+  {
+    "objectID": "5p8ghz_links.html#notes",
+    "href": "5p8ghz_links.html#notes",
+    "title": "5.8 GHz Links",
+    "section": "Notes",
+    "text": "Notes\n\nCandidate systems include event-time wireless video links.\nAnalysis will include PSDs, spectrograms, and temporal behavior."
+  },
+  {
+    "objectID": "1920_1930_mhz.html",
+    "href": "1920_1930_mhz.html",
+    "title": "1920–1930 MHz Analysis",
+    "section": "",
+    "text": "This page will summarize observed activity in the 1920–1930 MHz band."
+  },
+  {
+    "objectID": "1920_1930_mhz.html#overview",
+    "href": "1920_1930_mhz.html#overview",
+    "title": "1920–1930 MHz Analysis",
+    "section": "",
+    "text": "This page will summarize observed activity in the 1920–1930 MHz band."
+  },
+  {
+    "objectID": "1920_1930_mhz.html#notes",
+    "href": "1920_1930_mhz.html#notes",
+    "title": "1920–1930 MHz Analysis",
+    "section": "Notes",
+    "text": "Notes\n\nCandidate system: Riedel Bolero / DECT-like intercom activity.\nAnalysis will include PSDs, temporal activity, and node comparisons."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "RH Stadium Spectrum Analysis",
+    "section": "",
+    "text": "This site summarizes longitudinal RF spectrum measurements collected around the stadium environment.\nThe goal is to document observed spectral activity, compare activity across distributed nodes, and relate emissions to known event-time wireless systems when possible."
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "RH Stadium Spectrum Analysis",
+    "section": "",
+    "text": "This site summarizes longitudinal RF spectrum measurements collected around the stadium environment.\nThe goal is to document observed spectral activity, compare activity across distributed nodes, and relate emissions to known event-time wireless systems when possible."
+  },
+  {
+    "objectID": "index.html#pages",
+    "href": "index.html#pages",
+    "title": "RH Stadium Spectrum Analysis",
+    "section": "Pages",
+    "text": "Pages\n\n1920–1930 MHz: Candidate Riedel Bolero / DECT-like intercom activity.\n5.8 GHz Links: Candidate video or WaveCentral-style links near the football event window.\nTemporal PSD: Time-evolving PSD views across nodes."
+  }
+]

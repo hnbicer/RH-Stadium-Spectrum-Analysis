@@ -1,3 +1,7 @@
+project:
+  type: website
+  output-dir: docs
+
 website:
   title: "RH Stadium Spectrum Analysis"
   navbar:
@@ -10,3 +14,9 @@ website:
         text: 5.8 GHz Links
       - href: longitudinal_psd.qmd
         text: Temporal PSD
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    code-fold: true
