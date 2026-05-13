@@ -20,3 +20,8 @@ format:
     theme: cosmo
     toc: true
     code-fold: true
+
+  
+resources:
+  - content/rh_image.jpeg
+  - content/rh_platform0.mp4

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>RH Stadium Spectrum Analysis</title>
+<title>RadioHound Stadium Spectrum Analysis – RH Stadium Spectrum Analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -131,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">RH Stadium Spectrum Analysis</h1>
+<h1 class="title">RadioHound Stadium Spectrum Analysis</h1>
 </div>
 
 
@@ -150,15 +150,39 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>This site summarizes longitudinal RF spectrum measurements collected around the stadium environment.</p>
-<p>The goal is to document observed spectral activity, compare activity across distributed nodes, and relate emissions to known event-time wireless systems when possible.</p>
+<p>This site summarizes longitudinal RF spectrum measurements collected around the Notre Dame Stadium environment using <strong>RadioHound</strong> spectrum sensors.</p>
+<p>RadioHound is a low-cost and low-power spectrum sensing platform designed for distributed deployment. The sensors cover a wide frequency range, roughly <strong>100 MHz to 6 GHz</strong>, which makes them useful for observing many types of wireless activity such as cellular, Wi-Fi, intercom systems, telemetry, and event-production links.</p>
+<figure style="text-align: center;" class="figure">
+  <img src="content/rh_image.jpeg" alt="RadioHound spectrum sensor" style="width: 70%;" class="figure-img">
+  <figcaption>RadioHound spectrum sensor.</figcaption>
+</figure>
+<p>The RadioHound platform is being developed at the <strong>Wireless Institute at the University of Notre Dame</strong>, with major contributions from students and researchers. The goal is to make wide-area spectrum monitoring more scalable by using affordable sensors that can be deployed at many locations instead of relying only on expensive laboratory-grade equipment.</p>
+<p>RadioHound includes both the deployed sensing hardware and the software infrastructure used to work with the measurements. The physical RadioHound sensors collect RF spectrum data at different locations, while the browser-based interface makes it easier to visualize and inspect the collected measurements. During deployments, this web interface is useful because it allows researchers to view spectrum activity close to real time, compare activity across sensors, and quickly identify bands or time periods with interesting behavior.</p>
+<p>The video below shows an example of this browser-based workflow for visualizing RadioHound spectrum measurements.</p>
+<video autoplay="" muted="" loop="" playsinline="" controls="" width="100%">
+  <source src="content/rh_platform0.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<p>For this measurement campaign, <strong>RadioHound hardware version 3.8.1</strong> sensors were deployed around the Notre Dame Stadium environment and collected spectrum data over multiple days. The campaign included <strong>April 25, 2026</strong>, the day of the <strong>Notre Dame Blue-Gold Game</strong>. This allows us to compare regular background spectrum activity with activity observed during a live event.</p>
+<p>One motivation for this work is to understand whether large-scale events create recognizable <strong>patterns of life</strong> or <strong>spectrum signatures of life</strong> in the RF environment. The measured bands are not necessarily cellular bands, and nearby base stations may not be able to directly schedule users on all of these frequencies. However, activity in these bands can still provide useful context. For example, intercom systems, wireless video links, telemetry, and other event-production systems can indicate that a large event is underway and can reveal how the RF environment changes during the event.</p>
+<p>This type of spectrum context could be informative for nearby wireless infrastructure. If a base station or network controller can recognize the presence and behavior of an event beforehand or in real time, it may be able to make better decisions about scheduling, carrier aggregation, load balancing, or resource allocation in the cellular bands it controls.</p>
+<p>Measurements were collected in several frequency ranges:</p>
+<ul>
+<li><strong>470 to 608 MHz:</strong> Monitored as a UHF spectrum region of interest.</li>
+<li><strong>902 to 928 MHz:</strong> Monitored as an ISM-band region of interest.</li>
+<li><strong>1920 to 1930 MHz:</strong> Monitored because of possible Riedel Bolero or DECT-like intercom activity.</li>
+<li><strong>5.84 to 5.88 GHz:</strong> Monitored because of possible event-production wireless video or WaveCentral-style links.</li>
+</ul>
+<p>Although all of these ranges were observed, the <strong>470 to 608 MHz</strong> and <strong>902 to 928 MHz</strong> bands did not show as much activity during the measurement period. Because of that, this site mainly focuses on the <strong>1920 to 1930 MHz</strong> and <strong>5.84 to 5.88 GHz</strong> bands, where the observed activity was stronger and more closely related to event-time wireless systems.</p>
+<p>These measurements help show how spectrum activity changes over time, how emissions appear across different sensor locations, and how the observed signals may relate to known wireless systems used during live events.</p>
+<p>The goal of this site is to document observed spectral activity, compare activity across distributed nodes, and connect observed emissions to known event-time wireless systems when possible.</p>
 </section>
 <section id="pages" class="level2">
 <h2 class="anchored" data-anchor-id="pages">Pages</h2>
 <ul>
-<li><strong>1920–1930 MHz:</strong> Candidate Riedel Bolero / DECT-like intercom activity.</li>
-<li><strong>5.8 GHz Links:</strong> Candidate video or WaveCentral-style links near the football event window.</li>
-<li><strong>Temporal PSD:</strong> Time-evolving PSD views across nodes.</li>
+<li><a href="./1920_1930_mhz.html">1920 to 1930 MHz</a>: Candidate Riedel Bolero or DECT-like intercom activity.</li>
+<li><a href="./5p8ghz_links.html">5.8 GHz Links</a>: Candidate video or WaveCentral-style links near the football event window.</li>
+<li><a href="./longitudinal_psd.html">Temporal PSD</a>: Time-evolving PSD views across nodes.</li>
 </ul>
 
 
