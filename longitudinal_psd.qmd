@@ -48,6 +48,7 @@ A recurring feature is visible near the upper portion of the band, especially ar
 
 The video also highlights the spatial variation across the distributed receivers. The same spectral activity can appear strong at one node while being much weaker at another, suggesting differences due to transmitter location, propagation, antenna orientation, blockage, or local interference. This longitudinal view is useful because it shows not only whether a signal is present, but also **when** it is active, **how long** it persists, and **which receivers observe it most strongly**.
 
+<a id="psd-video-1920-1930"></a>
 <video class="psd-video" controls autoplay loop muted playsinline>
   <source src="content/1920-1930-psd.mp4" type="video/mp4">
   Your browser does not support the video tag.
