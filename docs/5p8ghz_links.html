@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>5.8 GHz Links – RadioHound Stadium Spectrum Analysis</title>
+<title>5837–5875 MHz Analysis – RadioHound Stadium Spectrum Analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -99,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./5p8ghz_links.html" aria-current="page"> 
-<span class="menu-text">5.84 - 5.88 GHz</span></a>
+<span class="menu-text">5837–5875 MHz</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./longitudinal_psd.html"> 
@@ -121,8 +121,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes">Notes</a></li>
+  <li><a href="#mean-psd-over-time" id="toc-mean-psd-over-time" class="nav-link active" data-scroll-target="#mean-psd-over-time">Mean PSD Over Time</a></li>
+  <li><a href="#peak-based-temporal-power-distribution" id="toc-peak-based-temporal-power-distribution" class="nav-link" data-scroll-target="#peak-based-temporal-power-distribution">Peak-Based Temporal Power Distribution</a></li>
+  <li><a href="#interpretation" id="toc-interpretation" class="nav-link" data-scroll-target="#interpretation">Interpretation</a></li>
+  <li><a href="#comparison-with-provided-event-frequency-plan" id="toc-comparison-with-provided-event-frequency-plan" class="nav-link" data-scroll-target="#comparison-with-provided-event-frequency-plan">Comparison With Provided Event Frequency Plan</a></li>
   </ul>
 </nav>
     </div>
@@ -131,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">5.8 GHz Links</h1>
+<h1 class="title">5837–5875 MHz Analysis</h1>
 </div>
 
 
@@ -148,16 +150,94 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>This page will summarize observed activity around the 5.8 GHz band.</p>
-</section>
-<section id="notes" class="level2">
-<h2 class="anchored" data-anchor-id="notes">Notes</h2>
+<section id="mean-psd-over-time" class="level2">
+<h2 class="anchored" data-anchor-id="mean-psd-over-time">Mean PSD Over Time</h2>
+<p>The figure below shows the mean PSD across the four RadioHound nodes during the <strong>12:00:03 EDT to 17:59:59 EDT</strong> interval.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="content/mean_psd_all_nodes_band3.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>Mean PSD over time for the 5837–5875 MHz band across all four nodes.</figcaption>
+</figure>
+</div>
+<p>From the mean PSD, several features are visible:</p>
 <ul>
-<li>Candidate systems include event-time wireless video links.</li>
-<li>Analysis will include PSDs, spectrograms, and temporal behavior.</li>
+<li>A broad elevated region is present from approximately <strong>5838 MHz to 5852 MHz</strong>.</li>
+<li>There is a noticeable drop around <strong>5844 MHz</strong> and <strong>5852 MHz</strong>, suggesting the edge of an occupied channel or signal block.</li>
+<li>Above this lower-band region, the PSD is generally weaker.</li>
+<li>The received power differs by node.</li>
 </ul>
+<p>This node-dependent structure suggests that the observed activity is real RF energy rather than a uniform normalization artifact or simple noise-floor effect.</p>
+</section>
+<section id="peak-based-temporal-power-distribution" class="level2">
+<h2 class="anchored" data-anchor-id="peak-based-temporal-power-distribution">Peak-Based Temporal Power Distribution</h2>
+<p>To better compare the two lower-band locations, power was extracted around <strong>5840.5 MHz</strong> and <strong>5848.0 MHz</strong> and visualized using split violin plots.</p>
+<ul>
+<li><strong>Left half</strong> of each violin: <strong>12:00–18:00</strong></li>
+<li><strong>Right half</strong> of each violin: <strong>18:00–00:00</strong></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="content/split_violin_power_by_peak_frequency_band5p84_5p88.png" class="img-fluid figure-img" style="width:85.0%"></p>
+<figcaption>Split violin plot of temporal power distributions at 5840.5 MHz and 5848.0 MHz.</figcaption>
+</figure>
+</div>
+<p>The violin plot shows a clear ordering across nodes at both peak positions:</p>
+<ul>
+<li><strong>NE</strong> has the strongest median power at both <strong>P1 = 5840.5 MHz</strong> and <strong>P2 = 5848.0 MHz</strong>.</li>
+<li><strong>NW</strong> is typically the second strongest.</li>
+<li><strong>SW</strong> and <strong>SE</strong> are consistently weaker.</li>
+<li>The relative ordering is similar at both peak locations.</li>
+</ul>
+<p>This behavior suggests that the two lower-band peaks are likely related to the same event-time wireless activity region, or to nearby channels with similar propagation geometry.</p>
+<p>The spread of each violin also shows that the received power is not perfectly constant over time, indicating temporal variation in the observed activity.</p>
+</section>
+<section id="interpretation" class="level2">
+<h2 class="anchored" data-anchor-id="interpretation">Interpretation</h2>
+<p>Taken together, the mean PSD and split violin plots suggest that the <strong>5837–5854 MHz</strong> portion of the band contains the most significant lower-band activity during the measurement interval.</p>
+<p>The observed PSD shape between roughly <strong>5838 MHz and 5852 MHz</strong> is broad rather than tone-like. This is more consistent with a wideband wireless system than with a narrowband emitter.</p>
+<p>The selected peak positions also support this interpretation:</p>
+<ul>
+<li><strong>P1 = 5840.5 MHz</strong> lies within the lower occupied region.</li>
+<li><strong>P2 = 5848.0 MHz</strong> lies within the higher part of the same broad occupied region.</li>
+<li>The drop near <strong>5852 MHz</strong> is consistent with the upper edge of this lower-band activity.</li>
+</ul>
+</section>
+<section id="comparison-with-provided-event-frequency-plan" class="level2">
+<h2 class="anchored" data-anchor-id="comparison-with-provided-event-frequency-plan">Comparison With Provided Event Frequency Plan</h2>
+<p>The provided event-frequency list includes two lower-band assignments that are directly relevant to the observed activity:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">Frequency</th>
+<th style="text-align: right;">Bandwidth</th>
+<th>System</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">5.841 GHz</td>
+<td style="text-align: right;">8 MHz</td>
+<td>WaveCentral</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">5.850 GHz</td>
+<td style="text-align: right;">8 MHz</td>
+<td>WaveCentral</td>
+</tr>
+</tbody>
+</table>
+<p>This frequency plan is consistent with the observations above. Assuming the listed frequencies are approximate channel centers:</p>
+<ul>
+<li>The <strong>5.841 GHz / 8 MHz WaveCentral</strong> channel would approximately occupy <strong>5837–5845 MHz</strong>.</li>
+<li>The <strong>5.850 GHz / 8 MHz WaveCentral</strong> channel would approximately occupy <strong>5846–5854 MHz</strong>.</li>
+</ul>
+<p>These two expected occupied regions line up well with the observed broad elevated PSD region from approximately <strong>5838 MHz to 5852 MHz</strong>.</p>
+<p>The two extracted peak positions also fall naturally within these expected WaveCentral regions:</p>
+<ul>
+<li><strong>P1 = 5840.5 MHz</strong> aligns with the <strong>5.841 GHz WaveCentral</strong> channel.</li>
+<li><strong>P2 = 5848.0 MHz</strong> aligns with the <strong>5.850 GHz WaveCentral</strong> channel.</li>
+</ul>
+<p>Overall, the measured lower-band 5.8 GHz activity is consistent with the provided football-event wireless frequency plan, especially the two <strong>WaveCentral</strong> channels centered at <strong>5.841 GHz</strong> and <strong>5.850 GHz</strong>.</p>
 
 
 </section>

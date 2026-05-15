@@ -11,7 +11,7 @@ website:
       - href: 1920_1930_mhz.qmd
         text: 1920–1930 MHz
       - href: 5p8ghz_links.qmd
-        text: 5.84 - 5.88 GHz
+        text: 5837–5875 MHz
       - href: longitudinal_psd.qmd
         text: Temporal PSD
 

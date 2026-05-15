@@ -99,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./5p8ghz_links.html"> 
-<span class="menu-text">5.84 - 5.88 GHz</span></a>
+<span class="menu-text">5837–5875 MHz</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./longitudinal_psd.html" aria-current="page"> 
@@ -121,8 +121,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes">Notes</a></li>
+  <li><a href="#mhz-activity" id="toc-mhz-activity" class="nav-link active" data-scroll-target="#mhz-activity">1920–1930 MHz Activity</a></li>
+  <li><a href="#mhz-activity-1" id="toc-mhz-activity-1" class="nav-link" data-scroll-target="#mhz-activity-1">5837–5875 MHz Activity</a></li>
   </ul>
 </nav>
     </div>
@@ -148,19 +148,67 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>This page will present time-evolving PSD views across multiple receiver nodes.</p>
-</section>
-<section id="notes" class="level2">
-<h2 class="anchored" data-anchor-id="notes">Notes</h2>
-<ul>
-<li>PSD snapshots will be compared across nodes.</li>
-<li>Future figures may include animated GIFs or time-indexed image galleries.</li>
-</ul>
+<style>
+.annular-figure {
+  text-align: center;
+  margin: 2.0rem auto;
+}
+
+.annular-figure img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.annular-figure figcaption {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 0.6rem;
+}
+
+.psd-video {
+  width: 100%;
+  display: block;
+  margin: 1.5rem auto 2.5rem auto;
+}
+</style>
+<section id="mhz-activity" class="level2">
+<h2 class="anchored" data-anchor-id="mhz-activity">1920–1930 MHz Activity</h2>
+<figure class="annular-figure figure">
+<img src="content/annular_activity_1920_1930MHz_fixed.png" alt="Annular spectral activity plot for 1920 to 1930 MHz" class="figure-img">
+<figcaption>
+Annular 12-hour spectral activity visualization for the 1920–1930 MHz band.
+</figcaption>
+</figure>
+<p>The animation below summarizes PSD snapshots from <strong>April 25, 2026, 12:00–18:00 EDT</strong>, with one frame approximately every minute. Each curve corresponds to one receiver node: <strong>NE</strong>, <strong>SW</strong>, <strong>NW</strong>, and <strong>SE</strong>.</p>
+<p>The monitored band from <strong>1920 to 1930 MHz</strong> contains activity consistent with the event frequency plan for the <strong>Riedel Bolero intercom system</strong>, which uses DECT-style timing in this band. The time-evolving PSD shows several emissions that appear and disappear over the course of the event.</p>
+<p>A recurring feature is visible near the upper portion of the band, especially around <strong>1925–1930 MHz</strong>. This signal has a relatively wide, flat, noise-like PSD shape that looks somewhat OFDM-like in the frequency domain. Based on its bandwidth, persistence, and position in the DECT allocation, this emission may correspond to a base-station/access-point-type transmitter or another infrastructure-side component of the intercom system. However, PSD alone is not enough to definitively identify the transmitter role, so this interpretation should be treated as a likely explanation rather than a confirmed label.</p>
+<p>The video also highlights the spatial variation across the distributed receivers. The same spectral activity can appear strong at one node while being much weaker at another, suggesting differences due to transmitter location, propagation, antenna orientation, blockage, or local interference. This longitudinal view is useful because it shows not only whether a signal is present, but also <strong>when</strong> it is active, <strong>how long</strong> it persists, and <strong>which receivers observe it most strongly</strong>.</p>
+<video class="psd-video" controls="" autoplay="" loop="" muted="" playsinline="">
+<source src="content/1920-1930-psd.mp4" type="video/mp4">
+<p>Your browser does not support the video tag. </p>
+</video></section>
+<section id="mhz-activity-1" class="level2">
+<h2 class="anchored" data-anchor-id="mhz-activity-1">5837–5875 MHz Activity</h2>
+<figure class="annular-figure figure">
+<img src="content/annular_activity_5G_fixed.png" alt="Annular spectral activity plot for 5837 to 5875 MHz" class="figure-img">
+<figcaption>
+Annular 12-hour spectral activity visualization for the 5837–5875 MHz band.
+</figcaption>
+</figure>
+<p>The second longitudinal view focuses on activity in the higher-frequency band from <strong>5.837 to 5.875 GHz</strong>. This band shows a different type of behavior compared with the 1920–1930 MHz DECT activity. Instead of many short-lived narrow emissions, the dominant features are wider signals with relatively flat, noise-like spectra.</p>
+<p>During the game, two clear OFDM-like signals are visible. They are centered approximately around <strong>5.8405 GHz</strong> and <strong>5.848 GHz</strong>, each occupying several MHz of bandwidth. These signals remain active during the game period and then disappear when the game ends, suggesting that they are likely associated with temporary event operations rather than persistent background activity.</p>
+<p>The PSD shape is consistent with wideband digital links, such as video, telemetry, or other event-support wireless systems operating in the 5 GHz range. As with the DECT case, the exact transmitter type cannot be confirmed from PSD alone, but the timing, bandwidth, and OFDM-like spectral shape strongly suggest coordinated event-related usage.</p>
+<p>The distributed receiver view is again useful here because the two signals are not observed identically at all nodes. Some receivers see the activity more strongly than others, which provides spatial information about where the transmitters may be located relative to the sensor deployment.</p>
+<video class="psd-video" controls="" autoplay="" loop="" muted="" playsinline="">
+<source src="content/5_ghz-psd.mp4" type="video/mp4">
+<p>Your browser does not support the video tag. </p>
 
 
-</section>
+</video></section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

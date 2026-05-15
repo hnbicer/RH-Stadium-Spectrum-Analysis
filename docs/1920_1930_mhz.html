@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>1920–1930 MHz Analysis – RadioHound Stadium Spectrum Analysis</title>
+<title>1920 – 1930 MHz Analysis – RadioHound Stadium Spectrum Analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -99,7 +99,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./5p8ghz_links.html"> 
-<span class="menu-text">5.84 - 5.88 GHz</span></a>
+<span class="menu-text">5837–5875 MHz</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./longitudinal_psd.html"> 
@@ -121,8 +121,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes">Notes</a></li>
+  <li><a href="#mean-psd-over-the-19201930-mhz-band" id="toc-mean-psd-over-the-19201930-mhz-band" class="nav-link active" data-scroll-target="#mean-psd-over-the-19201930-mhz-band">Mean PSD over the 1920–1930 MHz Band</a></li>
+  <li><a href="#temporal-power-distribution-at-detected-signal-centers" id="toc-temporal-power-distribution-at-detected-signal-centers" class="nav-link" data-scroll-target="#temporal-power-distribution-at-detected-signal-centers">Temporal Power Distribution at Detected Signal Centers</a></li>
   </ul>
 </nav>
     </div>
@@ -131,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">1920–1930 MHz Analysis</h1>
+<h1 class="title">1920 – 1930 MHz Analysis</h1>
 </div>
 
 
@@ -148,16 +148,34 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>This page will summarize observed activity in the 1920–1930 MHz band.</p>
+<section id="mean-psd-over-the-19201930-mhz-band" class="level2">
+<h2 class="anchored" data-anchor-id="mean-psd-over-the-19201930-mhz-band">Mean PSD over the 1920–1930 MHz Band</h2>
+<figure style="text-align: center;" class="figure">
+<img src="content/mean_psd_all_nodes_band2.png" alt="Mean PSD over the 1920--1930 MHz band for all four RadioHound nodes." style="width: 100%;" class="figure-img">
+<figcaption style="text-align: center;">
+Mean PSD over the 1920–1930 MHz band for all four RadioHound nodes.
+</figcaption>
+</figure>
+<p>To summarize the long-duration behavior of the 1920–1930 MHz band, I computed the mean periodogram for each RadioHound node over the full observation window. The averaging was performed in linear power units first, and the final averaged PSD was then converted to dBm.</p>
+<p>The resulting mean PSD shows that the activity in this band is not uniformly distributed across frequency. Instead, several persistent spectral peaks are visible across all four nodes. These repeated peaks indicate that the same channelized structure is observed spatially by the distributed sensors, rather than appearing as a transient artifact at only one node. The strongest recurring features appear around the lower and middle portions of the band, with additional structure toward the upper end near 1929–1930 MHz.</p>
+<p>There is also a clear difference in received power between nodes. The NW node observes the highest average power across most of the band, followed by NE, while SW and SE generally observe lower average power. This spatial variation is expected in a distributed sensing setup because each sensor experiences different propagation conditions, antenna placement, shadowing, and local interference. Importantly, even though the absolute received powers differ, the main spectral shapes are consistent across the nodes.</p>
+<p>Overall, this mean-PSD view provides a compact summary of the six-hour measurement period.</p>
+<figure style="text-align: center;" class="figure">
+<img src="content/mean_psd_with_peak_vlines_band2.png" alt="Mean PSD with detected peak frequencies." style="width: 100%;" class="figure-img">
+</figure>
 </section>
-<section id="notes" class="level2">
-<h2 class="anchored" data-anchor-id="notes">Notes</h2>
-<ul>
-<li>Candidate system: Riedel Bolero / DECT-like intercom activity.</li>
-<li>Analysis will include PSDs, temporal activity, and node comparisons.</li>
-</ul>
+<section id="temporal-power-distribution-at-detected-signal-centers" class="level2">
+<h2 class="anchored" data-anchor-id="temporal-power-distribution-at-detected-signal-centers">Temporal Power Distribution at Detected Signal Centers</h2>
+<figure style="text-align: center;" class="figure">
+<img src="content/split_violin_power_by_peak_frequency_band2.png" alt="Split violin plot of temporal power distributions at detected 1920--1930 MHz signal centers." style="width: 100%;" class="figure-img">
+<figcaption style="text-align: center;">
+Split violin plot of received power at the four detected signal centers. For each node, the left half corresponds to 12:00–18:00 and the right half corresponds to 18:00–00:00.
+</figcaption>
+</figure>
+<p>To better understand the temporal distribution of the detected spectral components, I extracted the received power around each of the four identified center frequencies and plotted the resulting distributions using split violin plots. Each frequency center contains four node-specific violins, corresponding to the NE, SW, NW, and SE RadioHound nodes. For each node, the left half of the violin represents the 12:00–18:00 interval, while the right half represents the 18:00–00:00 interval.</p>
+<p>This visualization shows that the median received power is generally higher during the 12:00–18:00 interval. This is consistent with the expectation that these signals were active during the main event period and became weaker or absent after 18:00. In the later time window, the distributions move closer to the noise floor, which suggests that the persistent spectral peaks observed in the mean PSD are largely driven by activity during the earlier portion of the measurement.</p>
+<p>The split-violin representation is useful because it separates two effects that are difficult to distinguish from the mean PSD alone. First, the node-to-node differences remain visible: NE and NW generally observe stronger power than SW and SE. Second, the temporal change is visible within each node at each frequency center: the higher-power side of the distribution is associated primarily with the 12:00–18:00 interval. This supports the interpretation that the detected peaks correspond to time-varying event-related activity rather than a stationary background feature.</p>
+<p>Overall, the violin plot confirms that the four narrowband features are not only visible in the long-term average spectrum, but also have a clear temporal structure. Their received-power distributions are elevated during the active period and decrease toward the noise floor after the event window.</p>
 
 
 </section>

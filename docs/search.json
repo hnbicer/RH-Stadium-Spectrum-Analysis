@@ -4,63 +4,77 @@
     "href": "longitudinal_psd.html",
     "title": "Temporal PSD Evolution",
     "section": "",
-    "text": "This page will present time-evolving PSD views across multiple receiver nodes."
+    "text": "Annular 12-hour spectral activity visualization for the 1920–1930 MHz band.\n\n\nThe animation below summarizes PSD snapshots from April 25, 2026, 12:00–18:00 EDT, with one frame approximately every minute. Each curve corresponds to one receiver node: NE, SW, NW, and SE.\nThe monitored band from 1920 to 1930 MHz contains activity consistent with the event frequency plan for the Riedel Bolero intercom system, which uses DECT-style timing in this band. The time-evolving PSD shows several emissions that appear and disappear over the course of the event.\nA recurring feature is visible near the upper portion of the band, especially around 1925–1930 MHz. This signal has a relatively wide, flat, noise-like PSD shape that looks somewhat OFDM-like in the frequency domain. Based on its bandwidth, persistence, and position in the DECT allocation, this emission may correspond to a base-station/access-point-type transmitter or another infrastructure-side component of the intercom system. However, PSD alone is not enough to definitively identify the transmitter role, so this interpretation should be treated as a likely explanation rather than a confirmed label.\nThe video also highlights the spatial variation across the distributed receivers. The same spectral activity can appear strong at one node while being much weaker at another, suggesting differences due to transmitter location, propagation, antenna orientation, blockage, or local interference. This longitudinal view is useful because it shows not only whether a signal is present, but also when it is active, how long it persists, and which receivers observe it most strongly.\n\n\nYour browser does not support the video tag."
   },
   {
-    "objectID": "longitudinal_psd.html#overview",
-    "href": "longitudinal_psd.html#overview",
+    "objectID": "longitudinal_psd.html#mhz-activity",
+    "href": "longitudinal_psd.html#mhz-activity",
     "title": "Temporal PSD Evolution",
     "section": "",
-    "text": "This page will present time-evolving PSD views across multiple receiver nodes."
+    "text": "Annular 12-hour spectral activity visualization for the 1920–1930 MHz band.\n\n\nThe animation below summarizes PSD snapshots from April 25, 2026, 12:00–18:00 EDT, with one frame approximately every minute. Each curve corresponds to one receiver node: NE, SW, NW, and SE.\nThe monitored band from 1920 to 1930 MHz contains activity consistent with the event frequency plan for the Riedel Bolero intercom system, which uses DECT-style timing in this band. The time-evolving PSD shows several emissions that appear and disappear over the course of the event.\nA recurring feature is visible near the upper portion of the band, especially around 1925–1930 MHz. This signal has a relatively wide, flat, noise-like PSD shape that looks somewhat OFDM-like in the frequency domain. Based on its bandwidth, persistence, and position in the DECT allocation, this emission may correspond to a base-station/access-point-type transmitter or another infrastructure-side component of the intercom system. However, PSD alone is not enough to definitively identify the transmitter role, so this interpretation should be treated as a likely explanation rather than a confirmed label.\nThe video also highlights the spatial variation across the distributed receivers. The same spectral activity can appear strong at one node while being much weaker at another, suggesting differences due to transmitter location, propagation, antenna orientation, blockage, or local interference. This longitudinal view is useful because it shows not only whether a signal is present, but also when it is active, how long it persists, and which receivers observe it most strongly.\n\n\nYour browser does not support the video tag."
   },
   {
-    "objectID": "longitudinal_psd.html#notes",
-    "href": "longitudinal_psd.html#notes",
+    "objectID": "longitudinal_psd.html#mhz-activity-1",
+    "href": "longitudinal_psd.html#mhz-activity-1",
     "title": "Temporal PSD Evolution",
-    "section": "Notes",
-    "text": "Notes\n\nPSD snapshots will be compared across nodes.\nFuture figures may include animated GIFs or time-indexed image galleries."
+    "section": "5837–5875 MHz Activity",
+    "text": "5837–5875 MHz Activity\n\n\n\nAnnular 12-hour spectral activity visualization for the 5837–5875 MHz band.\n\n\nThe second longitudinal view focuses on activity in the higher-frequency band from 5.837 to 5.875 GHz. This band shows a different type of behavior compared with the 1920–1930 MHz DECT activity. Instead of many short-lived narrow emissions, the dominant features are wider signals with relatively flat, noise-like spectra.\nDuring the game, two clear OFDM-like signals are visible. They are centered approximately around 5.8405 GHz and 5.848 GHz, each occupying several MHz of bandwidth. These signals remain active during the game period and then disappear when the game ends, suggesting that they are likely associated with temporary event operations rather than persistent background activity.\nThe PSD shape is consistent with wideband digital links, such as video, telemetry, or other event-support wireless systems operating in the 5 GHz range. As with the DECT case, the exact transmitter type cannot be confirmed from PSD alone, but the timing, bandwidth, and OFDM-like spectral shape strongly suggest coordinated event-related usage.\nThe distributed receiver view is again useful here because the two signals are not observed identically at all nodes. Some receivers see the activity more strongly than others, which provides spatial information about where the transmitters may be located relative to the sensor deployment.\n\n\nYour browser does not support the video tag."
   },
   {
     "objectID": "5p8ghz_links.html",
     "href": "5p8ghz_links.html",
-    "title": "5.8 GHz Links",
+    "title": "5837–5875 MHz Analysis",
     "section": "",
-    "text": "This page will summarize observed activity around the 5.8 GHz band."
+    "text": "The figure below shows the mean PSD across the four RadioHound nodes during the 12:00:03 EDT to 17:59:59 EDT interval.\n\n\n\nMean PSD over time for the 5837–5875 MHz band across all four nodes.\n\n\nFrom the mean PSD, several features are visible:\n\nA broad elevated region is present from approximately 5838 MHz to 5852 MHz.\nThere is a noticeable drop around 5844 MHz and 5852 MHz, suggesting the edge of an occupied channel or signal block.\nAbove this lower-band region, the PSD is generally weaker.\nThe received power differs by node.\n\nThis node-dependent structure suggests that the observed activity is real RF energy rather than a uniform normalization artifact or simple noise-floor effect."
   },
   {
-    "objectID": "5p8ghz_links.html#overview",
-    "href": "5p8ghz_links.html#overview",
-    "title": "5.8 GHz Links",
+    "objectID": "5p8ghz_links.html#mean-psd-over-time",
+    "href": "5p8ghz_links.html#mean-psd-over-time",
+    "title": "5837–5875 MHz Analysis",
     "section": "",
-    "text": "This page will summarize observed activity around the 5.8 GHz band."
+    "text": "The figure below shows the mean PSD across the four RadioHound nodes during the 12:00:03 EDT to 17:59:59 EDT interval.\n\n\n\nMean PSD over time for the 5837–5875 MHz band across all four nodes.\n\n\nFrom the mean PSD, several features are visible:\n\nA broad elevated region is present from approximately 5838 MHz to 5852 MHz.\nThere is a noticeable drop around 5844 MHz and 5852 MHz, suggesting the edge of an occupied channel or signal block.\nAbove this lower-band region, the PSD is generally weaker.\nThe received power differs by node.\n\nThis node-dependent structure suggests that the observed activity is real RF energy rather than a uniform normalization artifact or simple noise-floor effect."
   },
   {
-    "objectID": "5p8ghz_links.html#notes",
-    "href": "5p8ghz_links.html#notes",
-    "title": "5.8 GHz Links",
-    "section": "Notes",
-    "text": "Notes\n\nCandidate systems include event-time wireless video links.\nAnalysis will include PSDs, spectrograms, and temporal behavior."
+    "objectID": "5p8ghz_links.html#peak-based-temporal-power-distribution",
+    "href": "5p8ghz_links.html#peak-based-temporal-power-distribution",
+    "title": "5837–5875 MHz Analysis",
+    "section": "Peak-Based Temporal Power Distribution",
+    "text": "Peak-Based Temporal Power Distribution\nTo better compare the two lower-band locations, power was extracted around 5840.5 MHz and 5848.0 MHz and visualized using split violin plots.\n\nLeft half of each violin: 12:00–18:00\nRight half of each violin: 18:00–00:00\n\n\n\n\nSplit violin plot of temporal power distributions at 5840.5 MHz and 5848.0 MHz.\n\n\nThe violin plot shows a clear ordering across nodes at both peak positions:\n\nNE has the strongest median power at both P1 = 5840.5 MHz and P2 = 5848.0 MHz.\nNW is typically the second strongest.\nSW and SE are consistently weaker.\nThe relative ordering is similar at both peak locations.\n\nThis behavior suggests that the two lower-band peaks are likely related to the same event-time wireless activity region, or to nearby channels with similar propagation geometry.\nThe spread of each violin also shows that the received power is not perfectly constant over time, indicating temporal variation in the observed activity."
+  },
+  {
+    "objectID": "5p8ghz_links.html#interpretation",
+    "href": "5p8ghz_links.html#interpretation",
+    "title": "5837–5875 MHz Analysis",
+    "section": "Interpretation",
+    "text": "Interpretation\nTaken together, the mean PSD and split violin plots suggest that the 5837–5854 MHz portion of the band contains the most significant lower-band activity during the measurement interval.\nThe observed PSD shape between roughly 5838 MHz and 5852 MHz is broad rather than tone-like. This is more consistent with a wideband wireless system than with a narrowband emitter.\nThe selected peak positions also support this interpretation:\n\nP1 = 5840.5 MHz lies within the lower occupied region.\nP2 = 5848.0 MHz lies within the higher part of the same broad occupied region.\nThe drop near 5852 MHz is consistent with the upper edge of this lower-band activity."
+  },
+  {
+    "objectID": "5p8ghz_links.html#comparison-with-provided-event-frequency-plan",
+    "href": "5p8ghz_links.html#comparison-with-provided-event-frequency-plan",
+    "title": "5837–5875 MHz Analysis",
+    "section": "Comparison With Provided Event Frequency Plan",
+    "text": "Comparison With Provided Event Frequency Plan\nThe provided event-frequency list includes two lower-band assignments that are directly relevant to the observed activity:\n\n\n\nFrequency\nBandwidth\nSystem\n\n\n\n\n5.841 GHz\n8 MHz\nWaveCentral\n\n\n5.850 GHz\n8 MHz\nWaveCentral\n\n\n\nThis frequency plan is consistent with the observations above. Assuming the listed frequencies are approximate channel centers:\n\nThe 5.841 GHz / 8 MHz WaveCentral channel would approximately occupy 5837–5845 MHz.\nThe 5.850 GHz / 8 MHz WaveCentral channel would approximately occupy 5846–5854 MHz.\n\nThese two expected occupied regions line up well with the observed broad elevated PSD region from approximately 5838 MHz to 5852 MHz.\nThe two extracted peak positions also fall naturally within these expected WaveCentral regions:\n\nP1 = 5840.5 MHz aligns with the 5.841 GHz WaveCentral channel.\nP2 = 5848.0 MHz aligns with the 5.850 GHz WaveCentral channel.\n\nOverall, the measured lower-band 5.8 GHz activity is consistent with the provided football-event wireless frequency plan, especially the two WaveCentral channels centered at 5.841 GHz and 5.850 GHz."
   },
   {
     "objectID": "1920_1930_mhz.html",
     "href": "1920_1930_mhz.html",
-    "title": "1920–1930 MHz Analysis",
+    "title": "1920 – 1930 MHz Analysis",
     "section": "",
-    "text": "This page will summarize observed activity in the 1920–1930 MHz band."
+    "text": "Mean PSD over the 1920–1930 MHz band for all four RadioHound nodes.\n\n\nTo summarize the long-duration behavior of the 1920–1930 MHz band, I computed the mean periodogram for each RadioHound node over the full observation window. The averaging was performed in linear power units first, and the final averaged PSD was then converted to dBm.\nThe resulting mean PSD shows that the activity in this band is not uniformly distributed across frequency. Instead, several persistent spectral peaks are visible across all four nodes. These repeated peaks indicate that the same channelized structure is observed spatially by the distributed sensors, rather than appearing as a transient artifact at only one node. The strongest recurring features appear around the lower and middle portions of the band, with additional structure toward the upper end near 1929–1930 MHz.\nThere is also a clear difference in received power between nodes. The NW node observes the highest average power across most of the band, followed by NE, while SW and SE generally observe lower average power. This spatial variation is expected in a distributed sensing setup because each sensor experiences different propagation conditions, antenna placement, shadowing, and local interference. Importantly, even though the absolute received powers differ, the main spectral shapes are consistent across the nodes.\nOverall, this mean-PSD view provides a compact summary of the six-hour measurement period."
   },
   {
-    "objectID": "1920_1930_mhz.html#overview",
-    "href": "1920_1930_mhz.html#overview",
-    "title": "1920–1930 MHz Analysis",
+    "objectID": "1920_1930_mhz.html#mean-psd-over-the-19201930-mhz-band",
+    "href": "1920_1930_mhz.html#mean-psd-over-the-19201930-mhz-band",
+    "title": "1920 – 1930 MHz Analysis",
     "section": "",
-    "text": "This page will summarize observed activity in the 1920–1930 MHz band."
+    "text": "Mean PSD over the 1920–1930 MHz band for all four RadioHound nodes.\n\n\nTo summarize the long-duration behavior of the 1920–1930 MHz band, I computed the mean periodogram for each RadioHound node over the full observation window. The averaging was performed in linear power units first, and the final averaged PSD was then converted to dBm.\nThe resulting mean PSD shows that the activity in this band is not uniformly distributed across frequency. Instead, several persistent spectral peaks are visible across all four nodes. These repeated peaks indicate that the same channelized structure is observed spatially by the distributed sensors, rather than appearing as a transient artifact at only one node. The strongest recurring features appear around the lower and middle portions of the band, with additional structure toward the upper end near 1929–1930 MHz.\nThere is also a clear difference in received power between nodes. The NW node observes the highest average power across most of the band, followed by NE, while SW and SE generally observe lower average power. This spatial variation is expected in a distributed sensing setup because each sensor experiences different propagation conditions, antenna placement, shadowing, and local interference. Importantly, even though the absolute received powers differ, the main spectral shapes are consistent across the nodes.\nOverall, this mean-PSD view provides a compact summary of the six-hour measurement period."
   },
   {
-    "objectID": "1920_1930_mhz.html#notes",
-    "href": "1920_1930_mhz.html#notes",
-    "title": "1920–1930 MHz Analysis",
-    "section": "Notes",
-    "text": "Notes\n\nCandidate system: Riedel Bolero / DECT-like intercom activity.\nAnalysis will include PSDs, temporal activity, and node comparisons."
+    "objectID": "1920_1930_mhz.html#temporal-power-distribution-at-detected-signal-centers",
+    "href": "1920_1930_mhz.html#temporal-power-distribution-at-detected-signal-centers",
+    "title": "1920 – 1930 MHz Analysis",
+    "section": "Temporal Power Distribution at Detected Signal Centers",
+    "text": "Temporal Power Distribution at Detected Signal Centers\n\n\n\nSplit violin plot of received power at the four detected signal centers. For each node, the left half corresponds to 12:00–18:00 and the right half corresponds to 18:00–00:00.\n\n\nTo better understand the temporal distribution of the detected spectral components, I extracted the received power around each of the four identified center frequencies and plotted the resulting distributions using split violin plots. Each frequency center contains four node-specific violins, corresponding to the NE, SW, NW, and SE RadioHound nodes. For each node, the left half of the violin represents the 12:00–18:00 interval, while the right half represents the 18:00–00:00 interval.\nThis visualization shows that the median received power is generally higher during the 12:00–18:00 interval. This is consistent with the expectation that these signals were active during the main event period and became weaker or absent after 18:00. In the later time window, the distributions move closer to the noise floor, which suggests that the persistent spectral peaks observed in the mean PSD are largely driven by activity during the earlier portion of the measurement.\nThe split-violin representation is useful because it separates two effects that are difficult to distinguish from the mean PSD alone. First, the node-to-node differences remain visible: NE and NW generally observe stronger power than SW and SE. Second, the temporal change is visible within each node at each frequency center: the higher-power side of the distribution is associated primarily with the 12:00–18:00 interval. This supports the interpretation that the detected peaks correspond to time-varying event-related activity rather than a stationary background feature.\nOverall, the violin plot confirms that the four narrowband features are not only visible in the long-term average spectrum, but also have a clear temporal structure. Their received-power distributions are elevated during the active period and decrease toward the noise floor after the event window."
   },
   {
     "objectID": "index.html",

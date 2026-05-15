@@ -10,7 +10,7 @@ RadioHound is a low-cost and low-power spectrum sensing platform designed for di
 
 ```{=html}
 <figure style="text-align: center;">
-  <img src="content/rh_image.jpeg" alt="RadioHound spectrum sensor" style="width: 70%;">
+  <img src="content/rh_image.jpg" alt="RadioHound spectrum sensor" style="width: 70%;">
   <figcaption>RadioHound spectrum sensor.</figcaption>
 </figure>
 ```
